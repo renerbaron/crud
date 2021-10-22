@@ -1,18 +1,28 @@
 {
-    "employees": [{
+  "employees": [
+    {
       "id": 1,
       "name": "Zidane",
       "email": "zidane@mcu.com",
       "phone": "001-123-4567"
-    }, {
+    },
+    {
       "id": 2,
       "name": "Josias",
       "email": "josias@mcu.com",
       "phone": "001-123-4568"
-    }, {
+    },
+    {
       "id": 3,
-      "name": "Maria",
-      "email": "maria@mcu.com",
-      "phone": "001-123-9999"
-    } ]
-  }
+      "name": "Roberta",
+      "email": "roro@mcu.com",
+      "phone": "456-123-8888"
+    },
+    {
+      "name": "Jose Matos",
+      "email": "jose@teste.com",
+      "phone": "1",
+      "id": 4
+    }
+  ]
+}
