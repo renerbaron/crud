@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { ApiEmployeeService } from './../services/api-employee.service';
+
 
 @Component({
   selector: 'app-employee-create',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeeCreateComponent implements OnInit {
 
-  constructor() { }
+  @Input() employeeDetails = { name: '', email: '', phone: 0 }
 
-  ngOnInit(): void {
+  constructor(
+    public apiREST: ApiEmployeeService,
+    public router: Router
+  ) { }
+
+  ngOnInit() { }
+
+  addEmployee(dataEmployee) {
+    this.apiREST.createEmployee(this.employeeDetails).subscribe((data: {}) => {
+      this.router.navigate(['/employees-list'])
+    })
   }
 
 }
