@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiEmployeeService } from '../services/api-employee.service';
-import { RestApiService } from "../shared/rest-api.service";
 
 @Component({
   selector: 'app-employees-list',
